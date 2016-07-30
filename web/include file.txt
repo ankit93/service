@@ -1,0 +1,28 @@
+
+<script src="{{ asset('/public/web/lib/angular/angular.min.js') }}"></script>
+<script src="{{ asset('/public/web/lib/angular/bootstrap/ui-bootstrap-tpls-0.10.0.js')  }}"></script>
+<script src="{{ asset('/public/web/lib/angular/ui-router/angular-ui-router.min.js') }}"></script>
+
+
+{{-- app --}}
+<script src="{{ asset('/public/web/app.js') }}"></script>
+
+
+{{-- directives --}}
+<script src="{{ asset('/public/web/directives/globalDirectives.js') }}"></script>
+
+<!-- filters -->
+<script src="{{ asset('/public/web/filters/globalFilters.js') }}"></script>
+
+
+<-- services -->
+
+
+
+<-- security -->
+<script src="{{ asset('/public/web/security/principal.js') }}"></script>
+<script src="{{ asset('/public/web/security/authorization.js') }}"></script>
+
+<-- modules -->
+<script src="{{ asset('/public/web/modules/home/index.js') }}"></script>
+<script src="{{ asset('/public/web/modules/auth/index.js') }}"></script>

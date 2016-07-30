@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" id="ng-app">
+
+<head>
+    <title>::NG::</title>
+
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+
+    <script src="web/lib/jquery/jquery.min.js"></script>
+
+    <script src="web/lib/angular/angular.min.js"></script>
+    <script src="web/lib/angular/ui-router/angular-ui-router.min.js"></script>
+
+    <script src="web/app.js"></script>
+
+    <script src="web/directives/globalDirectives.js"></script>
+
+    <script src="web/filters/globalFilters.js"></script>
+
+    <script src="web/security/principal.js"></script>
+    <script src="web/security/authorization.js"></script>
+
+    <script src="web/modules/home/index.js"></script>
+    <script src="web/modules/auth/index.js"></script>
+
+</head>
+
+<body ng-controller="app.controller.main">
+
+<div ng-show="principal.isAuthenticated()">
+    I'm logged in
+</div>
+<div ng-hide="principal.isAuthenticated()">
+    I'm not logged in
+</div>
+
+<div ui-view="content">
+    Please wait while we retrieve your user info
+</div>
+
+</body>
+</html>
